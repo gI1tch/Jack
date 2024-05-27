@@ -1,0 +1,162 @@
+@media screen and (max-width: 1440px){
+    .main__table{
+        transform: scale(.787);
+        margin-left: 3.25% !important;
+        margin-top: -40px !important;
+       
+    } 
+    
+    .main__asset{
+        width: 52vw;
+    }
+    .game__phone-block{
+        height: 620px;
+        width: 573px;
+        transform: scale(.84);
+       
+    }
+    
+    #phone2{ 
+        right: -15% !important;
+    }
+    #product2{ 
+        right: -30% !important;
+    }
+}
+@media screen and (max-width: 1080px){
+    .main__table{
+        transform: scale(.70);
+        margin-left: -50px !important;
+        margin-top: -60px !important;
+    } 
+    .main__asset{
+        width: 56vw;
+    }
+    .game__phones{
+        justify-content: start !important;
+    }
+    .game__phone-block{
+        
+        transform: scale(.7);
+        width: 422px;
+        height: 392px;
+    }
+    #phone1{
+        top: -50% !important;
+    }
+    #phone2{
+        top: -37% !important;
+        right: -60% !important;
+    }
+    #product1{
+        top: -50% !important;
+    }
+    #product2{
+        top: -44% !important;
+        right: -80% !important;
+    }
+    .footer-asset{
+        width: 33vw;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .main__table{
+        transform: scale(.6);
+        margin-left: -100px !important;
+        margin-top: -80px !important;
+    }
+    .game__phone-block{
+        transform: scale(.6);
+        margin-left: -70px ;
+    }
+    #product2{
+        right: -100% !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main__content{
+        display: block !important;
+        margin: auto ;
+    }
+    .main__interactive-content{
+        height: 40% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+
+        
+    }
+    .main__table{
+        transform: scale(.7);
+        margin-left: 0px !important ;
+        display: block;
+        margin-top: -40px !important;
+    }
+    
+    .main__asset{
+        width: 70vw;
+    } 
+    .game__phones{
+        transform: scale(1);
+        width: 100% !important;
+        height: 60% ;   
+        display: flex;
+        justify-content: center !important;
+        flex-direction: column;
+        align-items: center !important;
+        .phones{
+            margin-left: -130px !important;
+        }
+    }
+    .product-visual{
+        max-height: 350px !important;
+    }
+    #product2{
+        right: -20% !important;
+    }
+   
+    
+}
+@media screen and (max-width: 680px){
+    .main__table{
+        .game-logo{
+            transform: scale(.9);
+            
+        }
+        img{
+            margin-top: -37px !important;
+        }
+        
+    }
+}
+@media screen and (max-width: 580px){
+    .main__table{
+        .game-logo{
+            transform: scale(.8);
+            margin-top: -80px  !important;
+
+            
+        }
+        .play{
+            transform: scale(.9);
+            margin-top: 20px;
+
+
+        }    
+    }   
+}
+@media screen and (max-width: 488px){
+    .main__table{
+        .game-logo{
+            transform: scale(.75);
+            margin-top: -100px  !important;
+        }
+        .play{
+            transform: scale(.85);
+        }   
+        
+
+    }
+}

@@ -1,18 +1,24 @@
 
 // burger animation
 const burger = document.querySelector('.header__burger')
-let menuActive = true
+
 
 burger.addEventListener('click', (e) => {
     burger.classList.toggle('opened')
-
-    menuActive = menuActive ? false : true
+    document.querySelector('.burger').classList.toggle('hidden')
+    
 })
 
 // modal close
 const yesBtn = document.querySelector('#no')
+const noBtn = document.querySelector('#yes')
 yesBtn.addEventListener('click', () => {
     document.querySelector('.modal').remove()
-    document.querySelector('body').style.overflow = 'auto'
+    document.querySelector('.landing-page').style.overflow = 'auto'
     yesBtn.removeEventListener('click')
 })
+noBtn.addEventListener('click', () =>{
+    alert('Извините, эта страница вам не подходит!')
+})
+
+

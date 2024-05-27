@@ -7,9 +7,10 @@
     <title>Капитан Джек</title>
     <link rel="stylesheet" href="dist/style.min.css">
 
+
     <script src="dist/main.min.js" defer></script>
 </head> 
-<body>
+<body class = 'landing-page'>
     <div class="modal">
         <div class="modal__container">
             <div class="modal__content">
@@ -25,7 +26,7 @@
         </div>
         
     </div>
-    <div class="wrapper"> 
+    <div class="wrapper "> 
         <header class = 'header'>
             <div class="header__inner">
                 <div class="header__logo">
@@ -49,7 +50,7 @@
         
         <main class = 'main'>
 
-            <div class="main__screan game">
+            <div class="main__screen game">
                 <div class="main__container">
                     <div class="main__content">
                         <div class="main__interactive-content">
@@ -66,7 +67,7 @@
                         </div>
 
                         <div class="game__phones">
-                            <div class="game__phone-block">
+                            <div class="game__phone-block phones">
                                 <img src="./img/iphone_game2.png" alt="phone" id = 'phone1'>
                                 <img src="./img/iphone_game.png" alt="phone" id = 'phone2'>
                             </div>
@@ -75,7 +76,7 @@
                         </div>
 
                         <div class="game__btn">
-                            <a href="#">
+                            <a href="#new-lots">
                                 <div class="game__btn-text">арома <br> новинки</div>
                                 <div class="game__btn-arrow">
                                     <img src="./img/solar_double-alt-arrow-up-linear.svg" alt="arrow">
@@ -89,13 +90,13 @@
                  
                    
                 </div>  
-                <img src= "img/jack_assets.png" alt="treasure" class = 'main__asset'> 
+                <img src= "img/asset/jack_assets.png" alt="treasure" class = 'main__asset'> 
             </div>
 
             <div class="line"></div>
 
 
-            <div class="main__screan new-lots">
+            <div class="main__screen new-lots" id = 'new-lots'>
                 <div class="main__container">
                     <div class="main__content">
                         <div class="main__interactive-content">
@@ -107,12 +108,9 @@
                                     </div>
                                     <div class="linkTo">
                                         
-                                        <button class = 'new-lots__btn'>
-                                            <p>
-                                                перейти
-                                            </p>
-                                           
-                                        </button>
+                                        <a class = 'new-lots__btn' href="./pages/product.html">
+                                                перейти   
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +133,7 @@
                  
                    
                 </div>  
-                <img src= "img/jack_assets.png" alt="treasure" class = 'main__asset'> 
+                <img src= "img/asset/jack_assets.png" alt="treasure" class = 'main__asset'> 
             </div>
             <div class="line"></div>
 
@@ -162,8 +160,10 @@
                                 две строки</p>
                         </div>
                     </div>
-                    
-                    <button class = 'footer-btn'>обратная связь</button>
+                    <div class="footer-btn__block">
+                        <a class = 'footer-btn' href="./pages/feedback.html">обратная связь</a>
+                    </div>
+                   
                    
 
                 </div>
@@ -184,47 +184,51 @@
                     </div>
                 </div>
             </div>
-            <img src="./img/assets.png" alt="paper" class="footer-asset">
+            <img src="./img/asset/assets.png" alt="paper" class="footer-asset">
         </footer>
-
-
     </div>
-    <div class="burger hidden">
-        <div class="burger-container">
-            <div class="burger-data burger-brand">
-                <div class="burger-data__info">
-                    <h2>О бренде</h2>
-                    <p>Узнайте историю <br> Captain Jack</p>
-                </div>
-                
-                <img src="./img/captain.png" alt="cigarettes">
-            </div>
-            <div class="burger-data burger-game">
-                <div class="burger-data__info">
-                    <h2>Игра</h2>
-                    <p>Вперёд за сокровищами!</p>
-                </div>
-                
-                <img src="./img/game-asset.png" alt="game">
-            </div>
-            <div class="burger-data burger-products">
-                <div class="burger-data__info">
-                    <h2>Продукция</h2>
-                    <p>Познакомьтесь <br> с исключительным качеством</p>
-                </div>
-                
-                <img src="./img/captain_ruby.png" alt="product">
-            </div>
-            <div class="burger-data burger-journal">
-                <div class="burger-data__info">
-                    <h2>Журнал</h2>
-                    <p>Окунитесь в мир бренда</p>
-                </div>
-                
-                <img src="./img/book.png" alt="journal">
-            </div>
 
-            <img src="./img/plank.png" class = 'plank'>
+
+    <div class="burger hidden">
+        
+        <div class="burger-container">
+            <!-- <div class="burger__blocks"> -->
+                <div class="burger-data burger-brand">
+                    <div class="burger-data__info">
+                        <h2>О бренде</h2>
+                        <p>Узнайте историю <br> Captain Jack</p>
+                    </div>
+                    
+                    <img src="./img/burger/about.png" alt="cigarettes" id = 'burger_about'>
+                </div>
+                <div class="burger-data burger-game">
+                    <div class="burger-data__info">
+                        <h2>Игра</h2>
+                        <p>Вперёд за сокровищами!</p>
+                    </div>
+                    
+                    <img src="./img/burger/game.png" alt="game" id = 'burger_game'>
+                </div>
+                <div class="burger-data burger-products">
+                    <div class="burger-data__info">
+                        <h2>Продукция</h2>
+                        <p>Познакомьтесь <br> с исключительным качеством</p>
+                    </div>
+                    
+                    <img src="./img/burger/product.png" alt="product" id = 'burger_product'>
+                </div>
+                <div class="burger-data burger-journal">
+                    <div class="burger-data__info">
+                        <h2>Журнал</h2>
+                        <p>Окунитесь в мир бренда</p>
+                    </div>
+                    
+                    <img src="./img/burger/journal.png" alt="journal" id = 'burger_journal'>
+                </div>
+                <div class="burger-plank"></div>
+
+                
+            <!-- </div> -->
         </div>
     </div>
 </body>

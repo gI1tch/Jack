@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная Связь</title>
+    <link rel="stylesheet" href="../dist/style.min.css">
+    <script src="../dist/main.min.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class = 'header'>
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class = 'header__logo-link' href="#" >
+                        <img class="header__logo-img" src="../img/logo.svg" alt="Капитан Джек" >
+                    </a>
+                    
+                </div>
+                <nav class = 'navigation'>
+                    <button class="header__burger">
+                        <span class="bar-top bar-line"></span>
+                        <span class="bar-mid bar-line"></span>
+                        <span class="bar-bot bar-line"></span>
+                    </button>
+
+                
+                </nav>
+            
+            </div>
+        </header> 
+        <main class="feedback">
+            <div class="feedback__container">
+                <div class="feedback__text-block">
+                    <h1>Обратная связь</h1>
+                    <p>Вы можете поделиться с нами предложениями и пожеланиями</p>
+                </div>
+
+                <form action="#" class = 'feedback__form'>
+                    <div class="feedback__input-form">
+                        <img src="../img/feedback/name.svg" alt="name">
+                        <input type="text" class = 'feedback__name feedback-input' placeholder="Имя">
+                    </div>
+                    <div class="feedback__input-form">
+                        <img src="../img/feedback/email.svg" alt="name">
+                        <input type="email" class = 'feedback__email feedback-input' placeholder="Электронная почта">
+                    </div>
+                    <div class="feedback__input-form">
+                        <img src="../img/feedback/text.svg" alt="name">
+                        <input type="text" class = 'feedback__msg feedback-input' placeholder="Ваш текст">
+                    </div>
+                    
+                    <button type="submit" class = 'feedback__submit'>отправить</button>
+                    
+                </form>
+            </div>
+        </main> 
+    </div>
+</body>
+</html>

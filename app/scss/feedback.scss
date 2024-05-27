@@ -1,0 +1,82 @@
+.feedback{
+    background: url('../img/feedback/tex.png');
+    background-position: left;
+    background-size: cover;
+    &__container{
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+        height: 100vh;
+        padding-top: 104px;
+        position: relative;
+    }
+
+    &__text-block{
+        text-align: center;
+        h1{
+            font-size: 72px;
+            filter: drop-shadow(0 4px 2px #000);
+        }
+
+        p{
+            color: #ffffffaa;
+            filter: drop-shadow(0 2px 2px #0000);
+            letter-spacing: 1px;
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 64px;
+        }
+        
+        
+
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__input-form{
+        display: flex;
+        border-bottom: 1px solid #ffffffa9;
+        input{
+            padding-top: 4px;
+            padding-bottom: 12px;
+            padding-left: 12px;
+            background: none;
+            border: none;
+            width: 100%;
+            color: #fff;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: #ffffffbe;
+            }
+
+        }
+        img{
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+    }
+
+    &__submit{
+        width: 215px;
+        height: 56px;
+        color: #fff;
+        background: #B61C3E;
+        position: absolute;
+        bottom: 7.4%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        font-size: 18px;
+        transition: .5s;
+        border:none;
+        &:hover{
+            filter: drop-shadow(0px 0px 4px #000);
+        }
+    }
+
+}

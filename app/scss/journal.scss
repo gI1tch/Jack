@@ -1,0 +1,114 @@
+
+.journal{
+    &__block{
+        z-index: 3;
+        position: relative;
+        height: 1122px;
+        color: #000;
+        margin-bottom: 64px;
+        .journal-preview{
+            position: relative;
+            z-index: 2;
+            width: 550px;
+            height: 372px;
+            filter:drop-shadow(0 2px 4px #180302);
+            
+        }
+
+        .journal__content{
+            padding-top:50px;
+          
+            padding-bottom:82px;
+            position: relative;
+            .journal-bg{
+                filter: drop-shadow(0 2px 4px #000);
+                position: absolute;
+                top: -13px;
+                display: block;
+                z-index: 0;
+                
+            }
+           h2{
+            position: relative;
+            text-align: center;
+            font-size: 24px;
+
+            
+           }
+           p{
+            position: relative;
+            
+           }
+           .journal__data{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 12px;
+            margin-bottom: 16px;
+            color:  #000000A3;
+            
+           }
+           .journal__text{
+            padding: 0 20px;
+            line-height: 28px;
+            font-size: 16px;
+            
+           }
+            
+        }
+    }
+    &__slider{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+        &-list{
+            justify-content: center;
+            display: flex;
+            gap: 8px;
+            li{
+                background: url(../img/pagination.png);
+                background-size: 100px;
+                background-position: center;
+                border-radius: 50%;
+                color: #000;
+                cursor: pointer;
+                filter: drop-shadow(0 2px 2px #000);
+                width: 40px;
+                height: 40px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .active{
+                color: #fff;
+                background: #B61C3E;
+            }
+            
+        }
+        #journal-prev{
+            width: 40px;
+            height: 40px;
+            background: #B61C3E;
+            border: none;
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 8px;
+            
+    
+        }
+        #journal-next{
+            border: none;
+            fill: #fff;
+            margin-left: 8px;
+            transform: rotate(180deg);
+            width: 40px;
+            height: 40px;
+            background: #B61C3E;
+            border-radius: 50%;
+    
+        }
+       
+    }
+    
+}
