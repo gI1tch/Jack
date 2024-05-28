@@ -38,6 +38,8 @@
     }
 
     &__img{
+        position: relative;
+        z-index: 1;   
         width: 50%;
         height: 100vh;
         &-block{
@@ -53,6 +55,7 @@
 
         }
     }
+
     .cig{
         z-index: 2;
     }
@@ -78,6 +81,7 @@
     #almond{
         bottom: 3.33%;
         right: 20.32%;
+        z-index: 2;
     }
     #cherry{
         bottom: 3.33%;

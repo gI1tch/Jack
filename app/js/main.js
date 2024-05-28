@@ -21,4 +21,5 @@ noBtn.addEventListener('click', () =>{
     alert('Извините, эта страница вам не подходит!')
 })
 
+console.log('привет мир');
 

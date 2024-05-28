@@ -22,6 +22,10 @@
     #product2{ 
         right: -30% !important;
     }
+    #chocolate-3{
+        bottom: 10% !important;
+        left: 0 !important;
+    }
 }
 @media screen and (max-width: 1080px){
     .main__table{
@@ -63,7 +67,9 @@
     .product__img-block{
         transform: scale(.9);
     }
-    
+    #chocolate-1{
+        right: 0 !important;
+    }
 }
 
 @media screen and (max-width: 960px){
@@ -141,20 +147,33 @@
         
     }
     .fly-obj{
+        position: relative;
         width: 90vh;
         height: 60vh;
+
+        scale: .8;
         #chocolate-1{
-            right:  0;
+            left:  70% !important;
         }
         #chocolate-2{
-            right: 10px !important;
-            bottom: 10% !important;
+            left: 75% !important;
+            bottom: -20% !important;
         }
         #chocolate-3{
-            right: 10px !important;
-            bottom: 10% !important;
+            left:90% !important;
+            bottom: -5% !important;
         }
-       
+       #almond{
+        scale: 1.1;
+        left: 78%;
+        bottom: -15%;
+       }
+       #cherry{
+        scale: 1.1;
+
+        left: 65%;
+        bottom: -15%;
+       }
 
     }
     .product__asset{
@@ -237,30 +256,36 @@
     .product__table-img{
         *{
             transform: scale(.9);
-        }
+        } 
         p{
             margin-top: -5px;
-        }
+        } 
         a{
             margin-top: -10px ;
-        }
+        } 
     }
     #product2{
         right: -60% !important;
     }
-
     .lot{
-        
         margin-top: -70px;
-        h2{
-            // font-size: 75px !important;
-        }
-       
     }
     .main__table-img{
         width: 500px !important;
     }
      
+
+    #chocolate-1{
+        left:  65% !important;
+    }
+    #chocolate-2{
+        left: 65% !important;
+  
+    }
+    #chocolate-3{
+        left:80%  !important;
+
+    }
 }
 @media screen and (max-width: 488px){
     .main__table{
@@ -294,7 +319,6 @@
         a{
             margin-top: -20px;
         }
-
     }
     #product1{
         left: -30% !important;
@@ -302,5 +326,4 @@
     #product2{
         right: -80% !important;
     }
-
-}
+}   
