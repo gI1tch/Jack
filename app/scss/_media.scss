@@ -58,6 +58,12 @@
     .footer-asset{
         width: 33vw;
     }
+    //product
+
+    .product__img-block{
+        transform: scale(.9);
+    }
+    
 }
 
 @media screen and (max-width: 960px){
@@ -76,6 +82,8 @@
 }
 
 @media screen and (max-width: 768px){
+    /*MAIN*/
+
     .main__content{
         display: block !important;
         margin: auto ;
@@ -116,7 +124,47 @@
     #product2{
         right: -20% !important;
     }
-   
+
+    /*PRODUCT*/
+    
+    .product__img{
+        margin-top: -100px !important;
+        transform: scale(0.8);
+        &-block{
+            position: relative;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80% !important;
+        height: 50vh !important; 
+        
+    }
+    .fly-obj{
+        width: 90vh;
+        height: 60vh;
+        #chocolate-1{
+            right:  0;
+        }
+        #chocolate-2{
+            right: 10px !important;
+            bottom: 10% !important;
+        }
+        #chocolate-3{
+            right: 10px !important;
+            bottom: 10% !important;
+        }
+       
+
+    }
+    .product__asset{
+        filter: blur(1.5px);
+    }
+    .main__table-img{
+        p{
+            padding: 0 !important;
+        }
+    }
     
 }
 @media screen and (max-width: 680px){
@@ -128,6 +176,19 @@
         img{
             margin-top: -37px !important;
         }
+
+        h2{
+            font-size: 52px;
+        }
+       
+        
+    }
+    #product2{
+        right: -40% !important;
+    }
+
+    .lot{
+        margin-top: -50px;
         
     }
 }
@@ -135,17 +196,71 @@
     .main__table{
         .game-logo{
             transform: scale(.8);
-            margin-top: -80px  !important;
-
-            
+            margin-top: -80px  !important; 
         }
         .play{
             transform: scale(.9);
             margin-top: 20px;
-
-
-        }    
+        } 
     }   
+
+
+    .product__table-img{
+        margin-top: 125px !important;
+    }
+    #product1{
+        left: -20% !important;
+    }
+    #product2{
+        right: -50% !important;
+    }
+    .product-visual{
+        margin-top: -100px;
+    } 
+    .lot{
+        margin-top: -50px;
+        *{
+            transform: scale(.9);
+        
+        }
+        p{
+            margin: -15px 0 0 0 !important;
+         
+        }
+    }
+    
+}
+@media screen and (max-width: 525px){
+    .product__table-img{
+        margin-top: 105px !important;
+    }
+    .product__table-img{
+        *{
+            transform: scale(.9);
+        }
+        p{
+            margin-top: -5px;
+        }
+        a{
+            margin-top: -10px ;
+        }
+    }
+    #product2{
+        right: -60% !important;
+    }
+
+    .lot{
+        
+        margin-top: -70px;
+        h2{
+            // font-size: 75px !important;
+        }
+       
+    }
+    .main__table-img{
+        width: 500px !important;
+    }
+     
 }
 @media screen and (max-width: 488px){
     .main__table{
@@ -159,4 +274,33 @@
         
 
     }
+
+    .product-visual{
+        img{
+            transform: scale(.9);
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .product__table-img{
+        margin-top: 80px !important;
+        h2{
+            font-size: 46px;
+        }
+        p{
+            font-size: 16px;
+        }
+        a{
+            margin-top: -20px;
+        }
+
+    }
+    #product1{
+        left: -30% !important;
+    }
+    #product2{
+        right: -80% !important;
+    }
+
 }

@@ -34,6 +34,7 @@
     &__content{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__img{
@@ -52,17 +53,24 @@
 
         }
     }
+    .cig{
+        z-index: 2;
+    }
     #chocolate-1{
-    
+        z-index: 1;
         bottom: 9.35%;
         right: 20%;
     }
     #chocolate-2{
+        z-index: 3;
+
         bottom: 5.5%;
         left: 27%;
 
     }
     #chocolate-3{
+        z-index: 1;
+
         left: 6.25%;
         bottom:16.3%;
     }
