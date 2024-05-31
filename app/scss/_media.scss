@@ -1,4 +1,17 @@
 @media screen and (max-width: 1440px){
+    .gate{
+        background-image: url('../img/gate1440.png');
+        #ozon{
+            left: 7%;
+        }
+        #amediateka{
+            right: 7%;
+        }
+        h1{
+            font-size: 52px;
+            line-height: 68.64px;
+        }
+    }
     .main__table{
         transform: scale(.787);
         margin-left: 3.25% !important;
@@ -28,6 +41,24 @@
     }
 }
 @media screen and (max-width: 1080px){
+    .gate{
+        &-asset{
+            scale: .7;
+           
+        }
+        #ozon{
+            left: -2%;
+            top: -3.3%;
+        }
+        #amediateka{
+            right: -2%;
+            top: -3.3%;
+        }
+        h1{
+            font-size: 52px;
+            line-height: 68.64px;
+        }
+    }
     .main__table{
         transform: scale(.70);
         margin-left: -50px !important;
@@ -70,8 +101,48 @@
     #chocolate-1{
         right: 0 !important;
     }
-}
 
+    /*about*/
+    .about-asset{
+        transform: scale(.8);
+    }
+    #spyglass{
+        display: none;
+    }
+    #dice{
+        display: none;
+    }
+    #jack{
+        top: 5% !important;
+        left: -7% !important;
+
+    }
+    #jo{
+        top: 65% !important;
+        left: -3% !important; 
+        scale: .9;
+    }
+    #jr{
+        left: 78% !important;
+        top: 7% !important;
+    }
+    
+    #map{
+        right: -20% !important;
+        bottom: -10% !important;
+    }
+
+    /*journal*/
+    .journal-asset{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1024px){
+    .gate{
+        background-image: url('../img/gate1024.png');
+    }
+}
 @media screen and (max-width: 960px){
     .main__table{
         transform: scale(.6);
@@ -88,8 +159,25 @@
 }
 
 @media screen and (max-width: 768px){
+    .gate{
+        background-image: url('../img/gate768.png');
+        h1{
+            font-size: 40px;
+            line-height: 52.8px;
+            margin-top: 90px;
+        }
+    }
     /*MAIN*/
-
+    .modal{
+      .modal__text-warning{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 15px;
+      }  
+      .modal__text-question{
+        font-size: 15px;
+      }
+    }
     .main__content{
         display: block !important;
         margin: auto ;
@@ -184,7 +272,56 @@
             padding: 0 !important;
         }
     }
+
+    /*about*/
+    .about-asset{
+        display: none;
+    }
+    .about-asset-mobile{
+        display: block;
+    }
+    .about-captain{
+        margin-bottom: 217px !important;
+    }
+    .about-product{
+        margin-bottom: 430px !important;
+    }
+    .about-motive{
+        margin-bottom: 452px !important;
+    }   
     
+    #dice-mobile{
+        left: 60%
+    }
+    #jack-mobile{
+        
+        bottom: -35% ;
+
+        z-index: 2;
+    }
+    //
+    #jo-mobile{
+        bottom:-57%;
+        left: 9%;
+        scale: .8;
+    }
+    #jr-mobile{
+        bottom:-73%;
+      right: 9%;
+      scale: .8;
+    }
+    //   
+    
+    #spyglass-mobile{
+        left: 0%;
+        scale: .8;
+        bottom: -110%;
+        transform: rotate(-90deg);
+    }
+    #money-mobile{
+        left: 55%;
+        bottom: -100%;
+    }
 }
 @media screen and (max-width: 680px){
     .main__table{
@@ -210,8 +347,45 @@
         margin-top: -50px;
         
     }
+    .feedback{
+       
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+        }
+        textarea{
+            resize:vertical;
+            height: 132px;
+        }
+    }
 }
 @media screen and (max-width: 580px){
+    .gate{
+        &__container{
+            width: 375px !important;
+        }
+        #ozon{
+           display: none;
+        }
+        #amediateka{
+           display: none;
+        }
+        #ozon-mobile{
+            display: block;
+            top: 0;
+            left: 0;
+            scale: 1;
+        }
+        #amediateka-mobile{
+            display: block;
+            top: 0;
+            right: 0;
+            scale: 1;
+
+        }
+    }
     .main__table{
         .game-logo{
             transform: scale(.8);
@@ -247,13 +421,143 @@
          
         }
     }
+
+    /*ABOUT*/
+    .about__container{
+        width: 425px !important;
+    }
+    .about-block__header{
+        h2{
+            font-size: 36px ;
+        }
+    }
+    .about-block__text{
+        p{
+            font-size: 15px !important;
+            padding: 10px 42px 0 !important;
+            line-height: 25px;
+        }
+    }
+    .about-block__bg{
+        top: 52px;
+    }
+    #dice-mobile{
+        left: 60%;
+        z-index: 2;
+    }
+    #jack-mobile{
+        bottom: -65% ;
+        z-index: 3;
+    }
+    //
+    #jo-mobile{
+        bottom:-103%;
+        left: 0%;
+        scale: .8;
+    }
+    #jr-mobile{
+        bottom:-117%;
+        right: 0%;
+        scale: .8;
+    }
+    //   
     
+    #spyglass-mobile{
+        left: -10%;
+        scale: .8;
+        bottom: -170%;
+        transform: rotate(-90deg);
+    }
+    #money-mobile{
+        left: 50%;
+        bottom: -156%;
+    }
+
+
+    /*JOURNAL*/
+
+    .journal__content{
+        padding-top: 30px !important;
+    }
+    .journal__block{
+        margin-bottom: -200px;
+        .journal__title{
+            font-size: 25px;
+        }
+        .journal__text{
+            font-size: 14px !important;
+            line-height: 17px !important;
+            
+        }
+        .journal__data{
+            font-size: 8px;
+        }
+    }
+
+    .burger-container{
+        width: 100%;
+        .burger-data__info{
+            
+            h2{
+                font-size: 37px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .burger-brand{
+            position: relative;
+            z-index: 3;
+            img{
+                width: 60%;
+                rotate: 15deg;
+                top: -30px;
+                left: 30px;
+            }
+           }
+    }
+
 }
 @media screen and (max-width: 525px){
     .product__table-img{
         margin-top: 105px !important;
     }
-    .product__table-img{
+    .burger-brand{
+        position: relative;
+        z-index: 3;
+        img{
+            width: 60%;
+            rotate: 15deg;
+            top: 20px !important;
+            left: 30px;
+        }
+    }
+
+    .burger-products{
+    
+        .burger-img{
+            img{
+                
+                
+                width: 80%;
+               
+                left: 35px;
+                bottom: -20px !important;
+                z-index: 0;
+            }
+    
+        } 
+        
+    }
+    .burger-game{
+        img{
+            scale: 1.3;
+            bottom: -25% !important;
+
+        } 
+    }
+    .product__table-block{
         *{
             transform: scale(.9);
         } 
@@ -270,8 +574,18 @@
     .lot{
         margin-top: -70px;
     }
-    .main__table-img{
-        width: 500px !important;
+    .product__table-block{
+        width: 470px !important;
+    }
+    .product__table-img{
+        width: 470px !important;
+        p{
+            margin-top: 0px;
+        } 
+        a{
+            margin-top: -10px ;
+        }
+
     }
      
 
@@ -296,8 +610,6 @@
         .play{
             transform: scale(.85);
         }   
-        
-
     }
 
     .product-visual{
@@ -305,25 +617,407 @@
             transform: scale(.9);
         }
     }
+
+    .product-visual{
+        width: 400px !important;
+    }
 }
 
 @media screen and (max-width: 450px){
-    .product__table-img{
-        margin-top: 80px !important;
+    
+    .about__container{
+        width: 360px !important;
+    }
+    .about-block__header{
+        height: 150px;
         h2{
-            font-size: 46px;
+            font-size: 30px ;
         }
+    }
+    .about-block__text{
         p{
-            font-size: 16px;
-        }
-        a{
-            margin-top: -20px;
+            font-size: 13px !important;
+            padding: 10px 32px 0 !important;
+            line-height: 22px;
         }
     }
-    #product1{
-        left: -30% !important;
+    .about-block__bg{
+        top: 52px;
     }
-    #product2{
-        right: -80% !important;
+    .about-asset-mobile{
+        scale: .8;
+    }
+    #dice-mobile{
+        left: 50%;
+        z-index: 2;
+    }
+    #jack-mobile{
+        bottom: -65% ;
+        left: -10%;
+        z-index: 3;
+    }
+    //
+    #jo-mobile{
+        bottom:-133%;
+        left: -10%;
+        scale: .8;
+    }
+    #jr-mobile{
+        bottom:-127%;
+        right: -10%;
+        scale: .8;
+    }
+    //   
+    
+    #spyglass-mobile{
+        left: -15%;
+        scale: .8;
+        bottom: -170%;
+        transform: rotate(-90deg);
+        z-index: 2;
+    }
+    #money-mobile{
+        left: 50%;
+        bottom: -156%;
+    }
+    .about-motive{
+        margin-bottom: 0 !important;
+    }
+
+    .journal__content{
+        padding-top: 15px !important;
+    }
+    .journal__block{
+        margin-bottom: -290px;
+        .journal__title{
+            font-size: 20px !important;
+        }
+        .journal__text{
+            font-size: 12px !important;
+            line-height: 15px !important;
+            
+        }
+        .journal__data{
+            font-size: 8px;
+            margin-top: 8px !important;
+            margin-bottom: 10px !important;
+        }
     }
 }   
+
+@media screen and (max-width: 375px){
+    .gate{
+        background-image: url('../img/gate375.png');
+        h1{
+            font-size: 28px;
+            line-height: 38.14px;
+            margin-top: 90px;
+        }
+        a{
+            padding: 15px 30px !important;
+            font-size: 16px;
+        }
+    }
+    .game{
+        background-image: url('../img/mobile-bg.png');
+    }
+    .line{
+        height: 24px !important;
+    }
+    .phones{
+        display: none;
+    }
+    .main__asset{
+        display: none;
+    }
+    .main__table-play{
+        background: none !important;
+        filter: drop-shadow( 0px 0px 0px #fff) !important;
+        .game-logo{
+           transform: scale(1.05);
+        }
+        .play img{
+            width: 85% !important;
+            margin-top: 16px !important;
+        }
+    }
+    .game__btn{
+        scale: .8;
+        right: 5px !important;
+        bottom: 2px !important;
+    }
+    .header__burger{
+        margin: 16px 5px !important;
+        scale: .8;
+    }
+    .main__table-second{
+        scale: .9;
+        margin-top: -60px !important;
+    }
+
+    .product-visual{
+        img{
+            scale: .8;   
+        }
+        #product1{
+            top: -20% !important;
+        }
+    }
+
+    .burger-brand{
+        position: relative;
+        z-index: 3;
+        img{
+            width: 60%;
+            
+            top: 40px !important;
+            left: 30px;
+        }
+    }
+
+    .burger-products{
+        .burger-img{
+            img{
+                width: 80%;
+                left: 60px !important;
+                bottom: -40px !important;
+                z-index: 0;
+                scale: 1.2;
+            }
+        } 
+    }
+    .burger-game{
+        img{
+            scale: 2;
+            bottom: -10% !important;
+            left: -100px !important;
+
+        } 
+    }
+
+    //about
+
+    .about__container{
+        width: 310px !important;
+    }
+    .about-block__header{
+        height: 120px;
+        h2{
+            font-size: 26px;
+        }
+    }
+    .about-block__text{
+        p{
+            font-size: 13px !important;
+            padding: 40px 36px 0 !important;
+            line-height: 20px;
+            transform: rotate(3.3deg) !important;
+        }
+    }
+    .about-block__bg{
+        display: none;
+    }
+    .about-block__bg-mobile{
+        display: block !important;
+        width: 100%;
+        top: 20%;
+        z-index: 1;
+    }
+    .about-asset-mobile{
+        scale: .8;
+    }
+    #dice-mobile{
+        left: 50%;
+        z-index: 2;
+    }
+    #jack-mobile{
+        bottom: -65% ;
+        left: -10%;
+        z-index: 3;
+    }
+    //
+    #jo-mobile{
+        bottom:-133%;
+        left: -10%;
+        scale: .8;
+    }
+    #jr-mobile{
+        bottom:-127%;
+        right: -10%;
+        scale: .8;
+    }
+    //   
+    
+    #spyglass-mobile{
+        left: -15%;
+        scale: .8;
+        bottom: -170%;
+        transform: rotate(-90deg);
+        z-index: 2;
+    }
+    #money-mobile{
+        left: 50%;
+        bottom: -156%;
+    }
+    .about-product{
+        margin-bottom: 380px !important;
+        .about-block__bg-mobile{
+            transform: rotate(-6deg);
+        }
+        p{
+            transform: rotate(-6deg) !important;
+            line-height: 28px;
+            font-size: 14px !important;
+            padding-top:10px !important ;
+        }
+        .about-asset-mobile{
+            z-index: 2;
+            top: 90%;
+            scale: .6 !important;
+        }
+        #jr-mobile{
+            left: 25%;
+            top: 115%;
+
+        } 
+        #jo-mobile{
+            left: -15%;  
+        } 
+    }
+    .about-motive{
+        margin-bottom: 0 !important;
+        .about-block__bg-mobile{
+            top: 33%;
+        }
+        p{
+           
+            line-height: 28px;
+            font-size: 14px !important;
+            padding-top:40px !important ;
+        }
+        #spyglass-mobile{
+            left: -15%;
+            scale: .6;
+            bottom: -90%;
+            transform: rotate(-90deg);
+            z-index: 2;
+        }
+        #money-mobile{
+            scale: .6;
+            left: 0%;
+            bottom: -50%;
+            filter: drop-shadow(0 2px 10px #000);
+            z-index: 2;
+        }
+    }
+
+    .journal__content{
+        .journal__title{
+            font-size: 18px !important;
+        }
+        .journal__data{
+            margin: 3px 0!important;
+        }
+        .journal__text{
+            font-size: 10px !important;
+            line-height: 13px !important;
+        } 
+
+    }
+    .journal__block{
+        margin-bottom: -400px !important;
+    }
+    .journal__slider{
+        margin-bottom: -200px !important;
+    }
+
+    .fly-obj{
+        display: none;
+    
+    }
+    .feedback{
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 14px;
+        }
+        textarea{
+            resize:vertical;
+            height: 106px;
+        }
+    }
+    
+}
+@media screen and (max-width: 375px){
+    .burger-data__info{
+        min-width: 100%;
+    }
+    .burger-img{
+        display: none;
+    }
+}
+
+
+@media screen and (max-height: 880px){
+    .game__phones{
+        scale: .8;
+        top: 7.5% ;
+    }
+    .main__table{
+        scale: .8;
+        margin-top: -100px !important;
+    }
+    .cig{
+        scale: .8;
+    }
+    .burger-data__info{
+        min-width: 100%;
+    }
+    .burger-img{
+        display: none;
+    }
+    
+    
+}
+@media screen and (max-height: 750px){
+    .game__phones{
+        scale: .8;
+        top: 7.5% ;
+    }
+    .cig{
+        scale: .6;
+    }
+    
+
+}
+@media screen and (max-height: 670px){
+    .product__table{
+        scale: .75;
+    }
+    .game__phones{
+        scale: .65;
+        top: 7.5% ;
+    }
+
+}
+
+@media screen and (max-height: 670px) and (max-width: 768px){
+    .cig{
+
+        top: -115% !important;
+    }
+    .fly-obj{
+        top: -50%;
+    }
+}
+
+@media screen and (max-height: 580px) and (max-width: 768px){
+    .cig{
+        scale: .55;
+        top: -145% !important;
+    }
+    .fly-obj{
+        top: -50%;
+    }
+}

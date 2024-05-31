@@ -6,13 +6,15 @@
     <title>Обратная Связь</title>
     <link rel="stylesheet" href="../dist/style.min.css">
     <script src="../dist/main.min.js" defer></script>
+    <script src="../js/postData.js" defer></script>
+    
 </head>
 <body>
     <div class="wrapper">
         <header class = 'header'>
             <div class="header__inner">
                 <div class="header__logo">
-                    <a class = 'header__logo-link' href="#" >
+                    <a class = 'header__logo-link' href="./index.html" >
                         <img class="header__logo-img" src="../img/logo.svg" alt="Капитан Джек" >
                     </a>
                     
@@ -32,29 +34,83 @@
         <main class="feedback">
             <div class="feedback__container">
                 <div class="feedback__text-block">
-                    <h1>Обратная связь</h1>
+                    <h1 class = 'status'>Обратная связь</h1>
                     <p>Вы можете поделиться с нами предложениями и пожеланиями</p>
                 </div>
 
                 <form action="#" class = 'feedback__form'>
                     <div class="feedback__input-form">
                         <img src="../img/feedback/name.svg" alt="name">
-                        <input type="text" class = 'feedback__name feedback-input' placeholder="Имя">
+                        <input type="text" class = 'feedback__name feedback-input' placeholder="Имя" name = 'name'>
                     </div>
                     <div class="feedback__input-form">
                         <img src="../img/feedback/email.svg" alt="name">
-                        <input type="email" class = 'feedback__email feedback-input' placeholder="Электронная почта">
+                        <input type="email" class = 'feedback__email feedback-input' placeholder="Электронная почта" name="email">
                     </div>
                     <div class="feedback__input-form">
                         <img src="../img/feedback/text.svg" alt="name">
-                        <input type="text" class = 'feedback__msg feedback-input' placeholder="Ваш текст">
+                        <textarea class = 'feedback__msg feedback-input' placeholder="Ваш текст" name='text'></textarea>
                     </div>
                     
                     <button type="submit" class = 'feedback__submit'>отправить</button>
                     
                 </form>
+                <a href="./index.html" class = 'feedback__submit close'>закрыть</a>
             </div>
         </main> 
     </div>
+    <div class="burger hidden">
+        <div class="burger-container">
+            <!-- <div class="burger__blocks"> -->
+                <a class="burger-data burger-brand" href="./about.html">
+                    <div class="burger-data__info">
+                        <h2>О бренде</h2>
+                        <p>Узнайте историю <br> Captain Jack</p>
+                    </div>
+                    <div class="burger-img">
+                        <img src="../img/burger/about.png" alt="cigarettes" id = 'burger_about'>
+                    </div>         
+                </a>
+                <a class="burger-data burger-game" href="https://game.captain-cake.com">
+                    <div class="burger-data__info">
+                        <h2>Игра</h2>
+                        <p>Вперёд за сокровищами!</p>
+                    </div>
+                    <div class="burger-img">
+                        <img src="../img/burger/game.png" alt="game" id = 'burger_game'>
+                    </div>
+
+                </a>
+                <a class="burger-data burger-products" href="./product.html">
+                    <div class="burger-data__info">
+                        <h2>Продукция</h2>
+                        <p>Познакомьтесь <br> с исключительным качеством</p>
+                    </div>
+                    <div class="burger-img">
+                        <img src="../img/burger/product.png" alt="product" id = 'burger_product'>
+                    </div>
+                  
+                </a>
+                <a class="burger-data burger-journal" href="./journal.html">
+                    <div class="burger-data__info">
+                        <h2>Журнал</h2>
+                        <p>Окунитесь в мир бренда</p>
+                    </div>
+                    <div class="burger-img">
+                        <img src="../img/burger/journal.png" alt="journal" id = 'burger_journal'>
+                    </div>
+              
+                </a>
+                <div class="burger-plank"></div>
+                <div class="burger-feedback">
+                    <a href="./feedback.html">обратная <br>
+                        связь</a>
+                </div>
+                
+            <!-- </div> -->
+        </div>
+    </div>
+
+</div>
 </body>
 </html>

@@ -1,20 +1,25 @@
 
 .journal{
+    .journal-asset{
+        position: absolute;
+    }
+    &__container{
+        position: relative;
+    }
+
+    .journal-preview{
+        position: relative;
+        z-index: 2;
+        width: 100%;  
+        filter:drop-shadow(0 2px 4px #180302);
+        
+    }
     &__block{
         z-index: 3;
         position: relative;
         height: 1122px;
         color: #000;
         margin-bottom: 64px;
-        .journal-preview{
-            position: relative;
-            z-index: 2;
-            width: 550px;
-            height: 372px;
-            filter:drop-shadow(0 2px 4px #180302);
-            
-        }
-
         .journal__content{
             padding-top:50px;
           
@@ -24,8 +29,10 @@
                 filter: drop-shadow(0 2px 4px #000);
                 position: absolute;
                 top: -13px;
+                width: 100%;
                 display: block;
                 z-index: 0;
+                
                 
             }
            h2{
@@ -57,12 +64,15 @@
         }
     }
     &__slider{
+        position: relative;
+        z-index: 3;
         display: flex;
         justify-content: center;
         margin-bottom: 120px;
         &-list{
             justify-content: center;
             display: flex;
+            flex-wrap: wrap;
             gap: 8px;
             li{
                 background: url(../img/pagination.png);
@@ -109,6 +119,35 @@
     
         }
        
+    }
+
+    #spyglass-journal{
+        top: 0%;
+        left: -5%;
+        scale: .7;
+        transform: rotate(20deg);
+    }
+    #jr-journal{
+        bottom: 0%;
+        right: 0;
+        scale: .9;
+    }
+    #jo-journal{
+        bottom: 2%;
+        left: 3%;
+       scale: .9;
+
+    }
+    #compass-journal{
+        top: 10%;
+        right: 0;
+       scale: .8;
+
+    }
+    #dice-journal{
+       right: 6.5%;
+       bottom: 38%;
+       scale: .8;
     }
     
 }

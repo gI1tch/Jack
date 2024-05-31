@@ -13,12 +13,13 @@
 
     }
     &__container{
-        
-        max-width:567px;
+        position: relative;
+        width:567px;
         display: block;
         margin: 0 auto;
         padding-top: 120px;
         overflow-y: scroll;
+        overflow-x: hidden;  
         height: 100%;
         -ms-overflow-style: none;  /* IE и Edge */
             scrollbar-width: none;  /* Firefox */
@@ -29,10 +30,9 @@
     }
 
     &-block{
+        width: 100%;
         position: relative;
-        
         &__header{
-            
             position: relative;
             z-index: 2;
             width: 100%;
@@ -57,6 +57,7 @@
         }
         &__bg{
             position: absolute;
+            width: 100%;
             top: 12px;
             z-index: 1;
 
@@ -75,7 +76,7 @@
         }
     }
     &-captain{
-        margin-bottom: 52px;
+        margin-bottom: 104px;
         .about-block__text{
             p{
                 padding-top: 23px;
@@ -117,14 +118,19 @@
                 transform: rotate();
             }
         }
-        .about-block__bg{
-            transform: rotate();
-        }
     }
-
+    .about-block__bg-mobile{
+        display: none;
+        position: absolute;
+        
+    }
     .about-asset{
         position: absolute;
         
+    }
+    &-asset-mobile{
+        position: absolute;
+        display: none;
     }
     #spyglass{
         top: 0;

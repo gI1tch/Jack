@@ -10,8 +10,6 @@ html{
 .wrapper{
     position: relative;
     overflow-x: hidden;
-
-
 }
 body{
     color: #fff;
@@ -50,8 +48,7 @@ body{
     & button{
         background: none;
     }
-    &__burger {
-        
+    &__burger {    
         padding: 10px;
         border: 1px solid transparent;
         margin: 7px 0;
@@ -137,6 +134,7 @@ body{
         text-transform: uppercase;
         line-height: 40px;
         margin-bottom: 52px;
+        filter: drop-shadow(0 2px 2px #000);
     }
     p{
         font-size: 20px;
@@ -144,6 +142,8 @@ body{
         letter-spacing: 1px;
         margin-bottom: 24px;
         text-transform: uppercase;
+        filter: drop-shadow(0 2px 2px #000);
+
 
     }
     
@@ -240,7 +240,7 @@ body{
         text-align: center;
         margin-top: 48px;
         
-        button{
+        img{
             background: none;
             outline: none;
             transition: .5s;
@@ -248,11 +248,8 @@ body{
           
             
         }
-        button:active,
-        button:focus  {
-        border:none;
-        }
-        button:hover{            
+      
+        img:hover{            
             transform: translateY(5px);
         }
     }
@@ -424,6 +421,8 @@ body{
     background-image: url('../img/tex.png');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 2;
     &-container{
         padding: 0px 11px;
         max-width: 321px;
@@ -530,6 +529,8 @@ body{
     display: none;
 }
 
+
+
 .burger{
    position:fixed;
    top: 0;
@@ -538,53 +539,89 @@ body{
    height: 100vh;
    z-index: 40;
    background: #000000a1;
-   &__blocks{
-    position: relative;
-   }
    &-container{
-    margin-top: 72px;
+    transition: all ease 2s;
+    margin-top: 32px;
     position: absolute;
     height: 100%;
     width: 496px;
-    right: 0;
+    right: -500px;  
+    &.burger-active{
+        right: 0;
+        transition: all ease 2s;
+
+    }
+    
+   }
+
+   
+   &-feedback{
+    width: 80px;
+    height: 80px;
+    background: #B61C3E;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 5;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 3px 25px #180302);
+    cursor: pointer;
+    &:hover{
+        background: #8f1631;
+    }
+    a{
+        color: #fff;
+        text-align: center;
+        font-size: 10px; 
+        text-transform: uppercase;
+       
+    }
    }
    &-data{
+    &:hover{
+        filter: brightness(.5);
+    }
+    position: relative;
+    box-shadow: 0 12px 32px #180302;
     background-image: url('../img/header.jpeg');
     background-position: right;
     background-size:1800px;
     height: 25%;
-    transform: rotate(-15deg);
     filter: drop-shadow(0 12px 32px #180302);
     display: flex;
+    justify-content: space-between;
     &__info{
+        min-width: 50%;
         margin-left: 58px;
         align-self: center;
         h2{
+            color: #fff;
             font-size: 48px;
             filter: drop-shadow(0 2px 4px #180302);
-             
         }
         p{
+            color: #fff;
             font-size: 18px;
             line-height: 28px;
             font-weight: lighter;
             letter-spacing: 1px;
             filter: drop-shadow(0 2px 2px #180302);
-
             text-shadow: 0 2px 2px #180302 ;
-        }
+        }  
         
     }
-    img{
-        position: absolute;
-    }
-
     #burger_about{
         right: 0;
-        height: 142px;
+       
     }
-
-    
    }
    
    &-plank{
@@ -593,11 +630,93 @@ body{
     left: 0;
     width: 32px;
     height: 100vh;
-    z-index: 2;
+    z-index: 5;
     background: url('../img/burger/plank.jpg');
     background-size: 2500%;
     filter: drop-shadow(0 0 32px #000);
    }
+ 
+   &-img{
+
+    overflow: hidden;
+    position: relative;
+    display: block;
+    align-self: center;
+    height: 100%;
+    img{
+        position: relative;
+        height: auto;
+        z-index: 45;
+        filter: drop-shadow(0 0 5px #000);
+        
+       
+    }
+   }
+   
+   .burger-brand{
+    position: relative;
+    z-index: 3;
+    img{
+        width: 60%;
+        rotate: 15deg;
+        top: -50px;
+        left: 30px;
+    }
+   }
+   .burger-game{
+
+    z-index: 1;
+
+    position: relative;
+    .burger-img{
+        overflow: hidden;
+        position:static;
+        width: 100%;
+        height: 100%;
+        img{
+             overflow: hidden;
+            display: inline-block;
+            position: absolute;
+            width: 130%;
+            bottom: -38%;
+            left: -10px;
+            
+           
+        }
+    } 
+   
+   }
+   .burger-products{
+    position: relative;
+    z-index: 2;
+    .burger-data__info{
+        min-width: 55%;
+    }
+    .burger-img{
+        img{
+            position: relative;
+            z-index: -10;
+            
+            width: 80%;
+            rotate: 15deg;
+            left: 35px;
+            bottom: 0;
+            z-index: 0;
+        }
+
+    } 
+   }
+   .burger-journal{
+    .burger-img{
+        img{
+            width: 150%;
+            rotate: 75deg;
+            // left: 80px;
+            bottom: -25px;
+            }
+        } 
+    }
+
 }
 
 @import 'media'
