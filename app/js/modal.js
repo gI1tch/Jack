@@ -4,7 +4,6 @@ if(yesBtn){
     yesBtn.addEventListener('click', () => {
         document.querySelector('.modal').remove()
         document.querySelector('.landing-page').style.overflow = 'auto'
-        yesBtn.removeEventListener('click')
     })
 }
 if(noBtn){

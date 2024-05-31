@@ -999,7 +999,13 @@
         scale: .65;
         top: 7.5% ;
     }
+    #map{
+        display: none;
 
+    }
+    #jack{
+        display: none;
+    }
 }
 
 @media screen and (max-height: 670px) and (max-width: 768px){
