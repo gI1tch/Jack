@@ -982,6 +982,12 @@
             height: 106px;
         }
     }
+    .gate__link{
+        width: 60%;
+        .gate__btn{
+            padding: 10px 30px !important;
+        }
+    }
     
 }
 @media screen and (max-width: 375px){

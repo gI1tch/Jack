@@ -435,6 +435,7 @@ body{
         *{
             filter: drop-shadow(0 2px 2px #000);
         }
+        margin-top: 50px;  
         display: flex;
         margin-left: 30px;
         img{   
@@ -443,13 +444,14 @@ body{
             left: 0;
             margin-right: 15px;
         }
-        &__text-block{     
+        &__text-block{   
+           
             a{
                 text-decoration: underline;
                 font-size: 18px;
                 color: #fff;
                 display: block;
-                margin-top: 50px;
+                // margin-top: 50px;
                 font-weight:normal;    
             }
             p{     
