@@ -15,6 +15,9 @@ body{
     color: #fff;
     scroll-behavior:smooth;
 }
+#__bs_notify__ {
+    display: none !important;
+}
 
 .landing-page{
     overflow: hidden;
@@ -526,7 +529,7 @@ body{
 }
 
 .hidden{
-    display: none;
+    transform: translateX(-100%);
 }
 
 
@@ -539,16 +542,21 @@ body{
    height: 100vh;
    z-index: 40;
    background: #000000a1;
+
    &-container{
-    transition: all ease 2s;
+   
+   
     margin-top: 32px;
+    overflow: hidden;
     position: absolute;
     height: 100%;
     width: 496px;
-    right: -500px;  
-    &.burger-active{
-        right: 0;
-        transition: all ease 2s;
+    transform: translateX(0%);
+
+    right: 0;
+    &.hidden{
+        transform: translateX(-100%);
+        
 
     }
     
@@ -586,33 +594,41 @@ body{
     }
    }
    &-data{
+    margin-left: -10px;
+    width: 120%;
+    left: -5%;
+    transform: rotate(-15deg);
     &:hover{
         filter: brightness(.5);
     }
     position: relative;
-    box-shadow: 0 12px 32px #180302;
+    box-shadow: 0 0px 32px #180302;
     background-image: url('../img/header.webp');
     background-position: right;
     background-size:1800px;
-    height: 25%;
-    filter: drop-shadow(0 12px 32px #180302);
+    height: 28%;
+    filter: drop-shadow(0 0px 16px #180302);
     display: flex;
     justify-content: space-between;
     &__info{
+        margin-top: -8%;
         min-width: 50%;
-        margin-left: 58px;
+        margin-left: 18%;
         align-self: center;
         h2{
+            font-weight: 200;
+            letter-spacing: 2px;
             color: #fff;
             font-size: 48px;
-            filter: drop-shadow(0 2px 4px #180302);
+            filter: drop-shadow(0 2px 2px #000000);
         }
         p{
             color: #fff;
             font-size: 18px;
             line-height: 28px;
             font-weight: lighter;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            padding-top: 5px;
             filter: drop-shadow(0 2px 2px #180302);
             text-shadow: 0 2px 2px #180302 ;
         }  
@@ -654,32 +670,40 @@ body{
    }
    
    .burger-brand{
+    z-index: 4;
+
+    .burger-data__info{
+        margin-top: 5%;
+    }
+    margin-top: -5%;
     position: relative;
-    z-index: 3;
     img{
-        width: 60%;
+        width: 50%;
         rotate: 15deg;
-        top: -50px;
+        top: 30%;
         left: 30px;
+        transform: rotate(12deg);
     }
    }
    .burger-game{
-
-    z-index: 1;
-
+    overflow: hidden;
+    z-index: 3;
     position: relative;
     .burger-img{
         overflow: hidden;
-        position:static;
+        position: initial;
         width: 100%;
         height: 100%;
+        z-index: -1;
+
         img{
-             overflow: hidden;
-            display: inline-block;
+
+            overflow: hidden;
             position: absolute;
             width: 130%;
-            bottom: -38%;
-            left: -10px;
+            bottom: 0%;
+            z-index: -1;
+            left: 0%;
             
            
         }
@@ -687,6 +711,7 @@ body{
    
    }
    .burger-products{
+    height: 25%;
     position: relative;
     z-index: 2;
     .burger-data__info{
@@ -697,16 +722,21 @@ body{
             position: relative;
             z-index: -10;
             
-            width: 80%;
-            rotate: 15deg;
-            left: 35px;
-            bottom: 0;
+            width: 70%;
+            rotate: 30deg;
+            left: 42px;
+            bottom: -10%;
             z-index: 0;
         }
 
     } 
    }
    .burger-journal{
+    z-index:1;
+
+    .burger-data__info{
+        margin-top: -20%;
+    }
     .burger-img{
         img{
             width: 150%;

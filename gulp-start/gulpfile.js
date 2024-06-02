@@ -10,9 +10,12 @@ const
     
 function browser() {
     sync.init({
+     
         server: {
            baseDir: 'app/' 
-        }
+        },
+        notify: false
+        
     }) 
 }
 
@@ -50,7 +53,7 @@ function styles(){
 }
 function scripts(){
     return src([
-        'app/js/**.js'
+        'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
