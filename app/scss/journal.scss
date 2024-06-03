@@ -15,14 +15,14 @@
         
     }
     &__block{
+        
         z-index: 3;
         position: relative;
-        height: 1122px;
+        min-height: 1122px;
         color: #000;
-        margin-bottom: 64px;
+        margin-bottom: 128px;
         .journal__content{
             padding-top:50px;
-          
             padding-bottom:82px;
             position: relative;
             .journal-bg{
@@ -49,7 +49,6 @@
            p{
             position: relative;
             font-weight: 500;
-            
            }
            .journal__data{
             text-align: center;
@@ -74,12 +73,22 @@
         display: flex;
         justify-content: center;
         margin-bottom: 120px;
+        margin-top: 50px;
         &-list{
             justify-content: center;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             li{
+                list-style: none;
+            }
+            .journal-func button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .journal-slide{
+              
                 background: url(../img/pagination.webp);
                 background-size: 100px;
                 background-position: center;
@@ -102,8 +111,8 @@
             
         }
         #journal-prev{
-            width: 40px;
-            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
             background: #B61C3E;
             border: none;
             color: #fff;
