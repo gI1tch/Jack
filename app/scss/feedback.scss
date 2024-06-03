@@ -2,6 +2,10 @@
     background: url('../img/feedback/tex.png');
     background-position: left;
     background-size: cover;
+    *::placeholder{
+        font-size: 16px;
+        font-family: "noto-serif";
+    }
     &__container{
         display: block;
         margin: 0 auto;
@@ -21,9 +25,8 @@
         p{
             color: #ffffffaa;
             filter: drop-shadow(0 2px 2px #0000);
-            letter-spacing: 1px;
             font-size: 18px;
-            font-weight: lighter;
+            font-weight: 300;
             margin-bottom: 64px;
         }
         
@@ -39,12 +42,13 @@
         display: flex;
         border-bottom: 1px solid #ffffffa9;
         textarea{
-            resize:vertical;
-            height: 176px;
+            resize:none;
+            height: 40px;
+            overflow: hidden;
         }
         .feedback-input{
             font-size: 14px !important;
-            padding-top: 4px;
+            // padding-top: 4px;
             padding-bottom: 4px;
             padding-left: 12px;
             background: none;
@@ -60,6 +64,7 @@
 
         }
         img{
+            margin-bottom: 12px;
             width: 28px;
             height: 28px;
             cursor: pointer;
