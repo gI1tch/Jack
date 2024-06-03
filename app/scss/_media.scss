@@ -1179,3 +1179,12 @@
         top: -50%;
     }
 }
+
+@media screen and (max-height: 800px) and (min-width: 1440px) and (min-height: 430px){
+    .main__table{
+        scale: .7;
+        margin-top: -70px !important;
+    }    
+}
+
+
