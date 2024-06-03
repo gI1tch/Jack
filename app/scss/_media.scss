@@ -147,15 +147,17 @@
     .main__table{
         transform: scale(.6);
         margin-left: -100px !important;
-        margin-top: -80px !important;
+          
     }
     .game__phone-block{
         transform: scale(.6);
         margin-left: -70px ;
+       
     }
     #product2{
         right: -100% !important;
     }
+   
 }
 
 @media screen and (max-width: 768px){
@@ -1011,12 +1013,18 @@
 }
 
 
-@media screen and (max-height: 880px) and (min-width: 375px){
-    
+@media screen and (max-height: 880px) and (min-width: 375px) and (max-width: 1080px){
     .main__table{
         scale: .8;
-        margin-top: -75px !important;
+        margin-top: -95px !important;
     }
+    
+}
+@media screen and (max-height: 690px) and (min-width: 768px){
+    .main__asset{
+        width: 40vw !important;
+    }
+    
     
 }
 

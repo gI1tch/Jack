@@ -12,7 +12,6 @@
         max-width: 600px;
         height: 1080px;
         padding-top: 104px;
-        position: relative;
     }
 
     &__text-block{
@@ -89,12 +88,24 @@
         }
     }
     .close{
-        
+      
+        font-size: 18px;
+
         display: none;
         justify-content: center;
         align-items: center;
-        font-weight: lighter;
-        letter-spacing: 1px;
+        font-weight: 500;
+
     }
+
+    .textStyle{
+        font-size: 44px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500 ;
+    }
+
 
 }

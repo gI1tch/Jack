@@ -9,11 +9,21 @@ function expandHandler(object){
 }
 // burger animation
 const burger = document.querySelector('.header__burger')
+const burgerScreen = document.querySelector('.burger')
+
+burgerScreen.addEventListener('click', (e) => {
+    if(e.target == burgerScreen){
+        burger.classList.toggle('opened')
+        burgerScreen.classList.toggle('hidden')
+        document.querySelector('.burger-container').classList.toggle('burger-active')
+    }
+})
+
 
 
 burger.addEventListener('click', (e) => {
     burger.classList.toggle('opened')
-    document.querySelector('.burger').classList.toggle('hidden')
+    burgerScreen.classList.toggle('hidden')
     document.querySelector('.burger-container').classList.toggle('burger-active')
     
 })
