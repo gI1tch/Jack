@@ -14,6 +14,11 @@
         filter:drop-shadow(0 2px 4px #180302);
         
     }
+    &__blocks{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
     &__block{
         
         z-index: 3;
@@ -21,6 +26,7 @@
         min-height: 1122px;
         color: #000;
         margin-bottom: 128px;
+        
         .journal__content{
             padding-top:50px;
             padding-bottom:82px;
@@ -72,8 +78,8 @@
         z-index: 3;
         display: flex;
         justify-content: center;
-        margin-bottom: 120px;
-        margin-top: 50px;
+        margin-bottom: 60px;
+        margin-top: 120px;
         &-list{
             justify-content: center;
             display: flex;
