@@ -221,7 +221,7 @@ body{
         z-index:2;
     }
     .main__table{
-        background-image: url(../img/table.webp);
+        background-image: url(../img/table.png);
         background-position:top;
         background-repeat: no-repeat;
        background-size: contain;
@@ -629,7 +629,7 @@ body{
     position: relative;
     box-shadow: 0 0px 32px #180302;
     background-image: url('../img/header.webp');
-    background-position:80% 55%;
+    background-position:45% 55%;
     background-size:1500px;
     height: 28%;
     filter: drop-shadow(0 0px 16px #180302);
@@ -671,7 +671,8 @@ body{
     height: 100vh;
     z-index: 5;
     background: url('../img/burger/plank.webp');
-    background-size: 2500%;
+    background-size: cover;
+    background-position: left;
     filter: drop-shadow(0 0 32px #000);
    }
  
