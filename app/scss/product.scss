@@ -44,6 +44,8 @@
         z-index: 1;   
         width: 50%;
         height: 100vh;
+        min-height: 738px;
+        
         &-block{
             height: 100%;
             display: flex;

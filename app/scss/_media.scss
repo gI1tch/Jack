@@ -237,7 +237,7 @@
     /*PRODUCT*/
     
     .product__img{
-        margin-top: -100px !important;
+        margin-top: -270px !important;
         transform: scale(0.8);
         &-block{
             position: relative;
@@ -289,6 +289,21 @@
     }
 
     /*about*/
+    .about-main{
+        height: 100%;
+        background-attachment: fixed;
+        
+    }
+    .about__container{
+        height: 100%;
+        overflow: hidden;
+        
+    }
+    .journal__blocks{
+        height: 100%;
+        overflow: hidden; 
+    }
+    //
     .about-asset{
         display: none;
     }
@@ -1068,6 +1083,16 @@
         }
     }
     
+    .product__img{
+        height: 50%;
+        &-block{
+            .cig{
+                top: -250px;
+            }
+        }
+    }
+    
+    
 }
 @media screen and (max-width: 375px){
     .burger-data__info{
@@ -1097,6 +1122,7 @@
 @media screen and (max-height: 880px){
     .cig{
         scale: .8;
+        margin-top: -100px;
     }
     .game__phones{
         scale: .8;
@@ -1108,14 +1134,20 @@
         scale: .8;
         top: 7.5% ;
     }
+    
+    
+}
+@media screen and (max-height: 750px) and (max-width: 768px ) {
     .cig{
-        scale: .6;
+        scale: .65;
+        margin-top: -160px;
        
+    }
+    .fly-obj{
+        margin-top: -180px;
     }
     
 }
-
-
 
 
 @media screen and (max-height: 750px) and (min-width:580px){
@@ -1210,4 +1242,23 @@
     .about-main{
         min-height: 900px;
     } 
+}
+@media screen and (min-height: 880px) and (max-width: 880px) and (min-width: 375px){
+    .product__table-img{
+        margin-top: -200px !important;
+    }
+    .cig{
+        scale: .8;
+    }
+}
+
+@media screen and (min-height: 790px) and (max-width: 375px){
+    .product__img{
+        margin-top: -350px !important;
+    }
+}
+@media screen and (max-height: 790px) and (max-width: 375px){
+    .product__img{
+        margin-top: -400px !important;
+    }
 }
