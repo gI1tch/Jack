@@ -29,6 +29,18 @@ body{
     overflow: hidden;
 }
 
+.main__screen{
+    min-height: 738px;
+}
+.main__container{
+    min-height: 738px;
+
+}
+.product__content{
+    min-height: 738px;
+
+}
+
 //modal
 .header{
     background-image: url(../img/header.webp);
@@ -456,9 +468,7 @@ body{
         display: flex;
         margin-left: 30px;
         img{   
-            position: relative;
-            top: 0;
-            left: 0;
+            align-self:flex-start;
             margin-right: 15px;
         }
         &__text-block{   
@@ -468,7 +478,7 @@ body{
                 font-size: 18px;
                 color: #fff;
                 display: block;
-                margin-top: 25px;
+                margin-top:4px;
                 font-weight:normal;    
             }
             p{     

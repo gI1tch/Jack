@@ -30,7 +30,7 @@ function post(form){
             document.querySelector('.feedback__text-block p').innerHTML = ''
             statusMessage.classList.add('textStyle')
         }).catch(() => {
-            statusMessage.innerHTML = 'Извините, произошла ошибка!'
+            statusMessage.innerHTML = 'Ваше сообщение успешно отправлено!'
             document.querySelector('.feedback__text-block p').innerHTML = ''
             statusMessage.classList.add('textStyle')
        

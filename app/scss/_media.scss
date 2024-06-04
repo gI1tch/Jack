@@ -530,10 +530,10 @@
         .burger-data__info{
             
             h2{
-                font-size: 37px;
+                font-size: 37px !important;
             }
             p{
-                font-size: 16px;
+                font-size: 16px !important;
             }
         }
         // .burger-data{
@@ -561,6 +561,58 @@
     }
 
 }
+//
+@media screen and (max-height: 706px) and (max-width: 700px) {
+    .burger-plank{
+        min-height: 1080px;
+    }
+    .burger{
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .burger-container{
+        min-height: 1080px;
+        width: 100%;
+        .burger-data{
+            height: 28%;
+            width: 115% !important;
+            left: -2%;
+        }
+        .burger-data__info{
+            
+            h2{
+                font-size: 50px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        // .burger-data{
+        //     height: 25%;
+        // }
+
+        .burger-brand{
+            height: 25% !important;
+            position: relative;
+            z-index: 3;
+            img{
+                width: 60%;
+                rotate: 15deg;
+                top: 10%;
+                left: 30px;
+            }
+        }
+        .burger-journal{
+            height: 40% !important;
+            margin-top: 0%;
+            .burger-data__info{
+                margin-top: -30%;
+            }
+        }
+    }
+}
+//
 @media screen and (max-width: 525px){
     .modal{
         h2{
@@ -1034,7 +1086,7 @@
     }
     
 }
-@media screen and (max-height: 690px) and (min-width: 768px){
+@media screen and (max-height: 738px) and (min-width: 768px){
     .main__asset{
         width: 40vw !important;
     }
@@ -1149,7 +1201,7 @@
 @media screen and (max-height: 800px) and (min-width: 1440px) and (min-height: 430px){
     .main__table{
         scale: .7;
-        margin-top: -70px !important;
+        margin-top: -50px !important;
     }    
 }
 
