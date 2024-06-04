@@ -19,12 +19,11 @@
        
     } 
     
-    .main__asset{
-        width: 52vw;
-    }
+   
     .game__phone-block{
         height: 620px;
         width: 573px;
+        margin-top: -20%;
         transform: scale(.84);
        
     }
@@ -65,7 +64,7 @@
         margin-top: -60px !important;
     } 
     .main__asset{
-        width: 56vw;
+        width: 56vw !important;
     }
     .game__phones{
         justify-content: start !important;
@@ -136,6 +135,7 @@
     .journal-asset{
         display: none;
     }
+   
     
 }
 @media screen and (max-width: 1024px){
@@ -1198,7 +1198,7 @@
 
 
 
-@media screen and (max-height: 800px) and (min-width: 1440px) and (min-height: 430px){
+@media screen and (max-height: 880px) and (min-width: 1440px) and (min-height: 430px){
     .main__table{
         scale: .7;
         margin-top: -50px !important;
@@ -1206,4 +1206,8 @@
 }
 
 
-
+@media screen and (min-width: 1080px) {
+    .about-main{
+        min-height: 900px;
+    } 
+}
