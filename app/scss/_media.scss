@@ -160,7 +160,20 @@
    
 }
 
+
 @media screen and (max-width: 768px){
+    .main__screen{
+        min-height: 635px !important;
+    }
+    .main__container{
+        min-height: 635px !important;
+
+    }
+    .product__content{
+        min-height: 635px !important;
+
+    }
+   
     .gate{
         background-image: url('../img/gate768.webp');
         h1{
@@ -233,7 +246,7 @@
         justify-content: center;
         align-items: center;
         width: 80% !important;
-        height: 50vh !important; 
+        height: 80% !important; 
         
     }
     .fly-obj{
@@ -756,6 +769,7 @@
 }   
 
 @media screen and (max-width: 375px){
+    
     .gate{
         background-image: url('../img/gate375.webp');
         h1{
@@ -1048,41 +1062,10 @@
     }
     
 }
-@media screen and (max-height: 800px) and (max-width: 375px) {
 
-    .cig{
-        scale: .6;
-        top: -80% !important;
-    }
-    
-}
-@media screen and (max-height: 700px) and (max-width: 375px) {
-    .cig{
-        scale: .6;
-        top: -120% !important;
-    }
-    
-}
 
-@media screen and (max-height: 670px) and (min-width: 375px){
-    .product__table{
-        scale: .75;
-    }
-    .game__phones{
-        scale: .65;
-        top: 7.5% ;
-    }
-    #map{
-        display: none;
 
-    }
-    #jack{
-        display: none;
-    }
-    .ruby__table{
-        margin-top: -80px !important;
-    }
-}
+
 @media screen and (max-height: 750px) and (min-width:580px){
     .burger{
         .burger-data__info{
@@ -1160,25 +1143,8 @@
         }
     }
 }
-@media screen and (max-height: 670px) and (max-width: 768px){
-    .cig{
 
-        top: -115% !important;
-    }
-    .fly-obj{
-        top: -50%;
-    }
-}
 
-@media screen and (max-height: 580px) and (max-width: 768px){
-    .cig{
-        scale: .55;
-        top: -145% !important;
-    }
-    .fly-obj{
-        top: -50%;
-    }
-}
 
 @media screen and (max-height: 800px) and (min-width: 1440px) and (min-height: 430px){
     .main__table{
@@ -1186,5 +1152,6 @@
         margin-top: -70px !important;
     }    
 }
+
 
 

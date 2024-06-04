@@ -10,6 +10,7 @@ html{
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+    background: #37221C;
 }
 
 .wrapper{
@@ -333,13 +334,16 @@ body{
     align-items: center;
 
     #phone1{
+        scale: 1.1;
         top: 0;
         z-index: 3;
-        left: 0;
+        left: -8%;
         
         
     }
     #phone2{
+        scale: 1.1;
+
         top: 7%;
         right: 0;
         z-index: 2;
@@ -386,8 +390,10 @@ body{
         
         position: relative;
         #product1{
+            
+
             z-index: 3;
-            left: 0; 
+            left: -8%; 
         }
         #product2{
             right: 0;
