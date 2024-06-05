@@ -3,7 +3,7 @@ const noBtn = document.querySelector('#yes')
 if(yesBtn){
     yesBtn.addEventListener('click', () => {
         document.querySelector('.modal').remove()
-        document.querySelector('.landing-page').style.overflow = 'auto'
+        // document.querySelector('.landing-page').style.overflow = 'auto'
     })
 }
 if(noBtn){

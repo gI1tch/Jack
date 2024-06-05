@@ -25,9 +25,7 @@ body{
     display: none !important;
 }
 
-.landing-page{
-    overflow: hidden;
-}
+
 
 .main__screen{
     min-height: 738px;
@@ -174,8 +172,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    button{
-        margin: 0 6px;
+    gap: 12px;
+    a{
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
         width: 164px;
         height: 56px;
         border: 1px solid #52212E;
