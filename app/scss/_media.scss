@@ -290,13 +290,13 @@
 
     /*about*/
     .about-main{
-        height: 100%;
+        height: 100vh;
         background-attachment: fixed;
         
     }
     .about__container{
         height: 100%;
-        overflow: hidden;
+        overflow: auto;
         
     }
     .journal__blocks{
@@ -392,6 +392,7 @@
     }
 }
 @media screen and (max-width: 580px){
+   
     .gate{
         &__container{
             width: 375px !important;
